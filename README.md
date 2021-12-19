@@ -26,7 +26,7 @@ This should install `opencv` under directory `D:\opencv\`.
 
 ## 4. Set environment variables in order to provide `gcc` with global include paths to your `opencv`.
 - `CPLUS_INCLUDE_PATH`=`D:\opencv\build\install\include`
-- Add `D:\opencv\build\bin` to `Path` environment variable.
+- Add `D:\opencv\build\install\x64\mingw\bin` to `Path` environment variable.
 
 If you want to find out your gcc's default include path:
 ```bash
