@@ -9,7 +9,7 @@
 - Install `MSYS2`.
 - Run `pacman -S make cmake` from your `MSYS2` terminal.
 - Uncomment `MSYS2_PATH_TYPE=inherit` in `msys2.ini`, `mingw64.ini` and `mingw32.ini`.
-- Add `D:\msys64\mingw64\bin` to your `Path` environment variable.
+- Add `D:\msys64\mingw64\bin` and `D:\msys64\usr\bin` to your `Path` environment variable.
 
 ## 3. Run the following in `cmd.exe`.
 ```cmd
