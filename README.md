@@ -7,7 +7,7 @@
 ## 2. Have `MSYS2` and its `make` and `cmake` properly installed.
 - Assuming you've already installed `go` and `git`.
 - Install `MSYS2`.
-- Run `pacman -S make cmake` from your `MSYS2` terminal.
+- Run `pacman -S make cmake mingw-w64-x86_64-gcc` from your `MSYS2` terminal.
 - Uncomment `MSYS2_PATH_TYPE=inherit` in `msys2.ini`, `mingw64.ini` and `mingw32.ini`.
 - Add `D:\msys64\mingw64\bin` and `D:\msys64\usr\bin` to your `Path` environment variable.
 
