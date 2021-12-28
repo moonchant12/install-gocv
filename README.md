@@ -1,4 +1,4 @@
-# Install [gocv](https://github.com/hybridgroup/gocv) (aka. "gocv.io/x/gocv") on Windows
+# Install [gocv](https://github.com/hybridgroup/gocv) "gocv.io/x/gocv" on Windows
 
 ## 1. Download and extract both to `D:\opencv`.
 - https://github.com/opencv/opencv/archive/4.5.4.zip
