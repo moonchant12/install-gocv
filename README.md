@@ -4,7 +4,7 @@
 - https://github.com/opencv/opencv/archive/4.5.4.zip
 - https://github.com/opencv/opencv_contrib/archive/4.5.4.zip
 
-## 2. Have `MSYS2` and its `make` and `cmake` properly installed.
+## 2. Have `MSYS2` and its `make`, `cmake` and `gcc` properly installed.
 - Assuming you've already installed `go` and `git`.
 - Install `MSYS2`.
 - Run `pacman -S make cmake mingw-w64-x86_64-gcc` from your `MSYS2` terminal.
