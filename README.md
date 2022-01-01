@@ -7,9 +7,9 @@
 ## 2. Have `MSYS2` and its `make`, `cmake`, `gcc` and `toolchain` properly installed.
 - Assuming you've already installed `go` and `git`.
 - Install `MSYS2`.
-- Run `pacman -S make cmake mingw-w64-x86_64-cmake pacman mingw-w64-x86_64-gcc mingw-w64-x86_64-toolchain` from your `MSYS2` terminal.
+- Run `pacman -S make cmake gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-toolchain` from your `MSYS2` terminal.
 - Uncomment `MSYS2_PATH_TYPE=inherit` in `msys2.ini`, `mingw64.ini` and `mingw32.ini`.
-- Add `D:\msys64\mingw64\bin` and (optionally) `D:\msys64\usr\bin` to your `Path` environment variable.
+- Add `D:\msys64\mingw64\bin` and `D:\msys64\usr\bin` to your `Path` environment variable.
 
 ## 3. Run the following in `cmd.exe`.
 ```cmd
@@ -25,12 +25,12 @@ This should install `opencv` under directory `D:\opencv\`.
 ```cmd
 rmdir D:\opencv\opencv-4.5.4 /s /q
 rmdir D:\opencv\opencv_contrib-4.5.4 /s /q
-chdir /D %GOPATH%\src\gocv.io\x\gocv
+
 ```
 
 ## 4. Set environment variables in order to provide `gcc` with global include paths to your `opencv`.
 - `CPLUS_INCLUDE_PATH`=`D:\opencv\build\install\include`
-- Add `D:\opencv\build\install\x64\mingw\bin` to `Path` environment variable.
+- Add `D:\opencv\build\install\x64\mingw\bin` to your `Path` environment variable.
 
 If you want to find out your gcc's default include path:
 ```bash
@@ -48,3 +48,4 @@ Either way you prefer.
 
 ## 6. Test it.
 - `go get -v gocv.io/x/gocv/...`
+- `chdir /D %GOPATH%\src\gocv.io\x\gocv`
